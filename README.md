@@ -1,7 +1,7 @@
 <h1 align="center">MAVA (Medical Astronaut Vital Assistant)</h1>
 
 <p align="center">
-  <img src="https://github.com/yourusername/mava/blob/main/mava-logo.png" alt="Project Banner">
+  <img src="https://github.com/kyrollos2/M.A.V.A/blob/main/Project_M.A.V.a_2.gif" alt="Project Banner">
 </p>
 
 <h4 align="center">🚀 Revolutionizing Health Assessment for Astronauts 🌌</h4>
