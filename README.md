@@ -40,29 +40,28 @@ Implementation: We created a user friendly User Interface, where the medical off
 
 ## 💡 Tech Stack
 
-### Front-End Development
+### Front-End Development :🖌️
 
 The front-end of MAVA is built with modern web technologies, ensuring a responsive and user-friendly experience. Key technologies include:
 - React
 - Html
 - CSS
 
-### Back-End Development
+### Back-End Development 🐍
 
 The back-end of MAVA handles data processing, authentication, and more. Key technologies include:
 
 - Python Scripts to generate fake data sets
 -Java Springboot handle business logic
 
-### ML-Development
+### ML-Development 🤖
 As described before, we generated a set of  5000 'fake and healthy' data. We used pandas for data manipulation, and scikit learn and used relevant dictionaries for establishing a data processing pipeline, training and evaluation I would love to go into more technical details but its 11:17 and I'm stressed. We ended up being able to successful classify our data set using Google's Auto AI and used two training cycles of 3 hours each. However this strategy is not viable in the long run  as it is resource intensive, cost prohibitive, and provides us little control of the model.
 
-### Database
+### Database 
 
 MAVA utilizes a robust database system to store and manage health data efficiently. The chosen database technology is:
 
-- MongoDB
-
+- MongoDB: Nonstructured databases is a perfect starting point for our application. 
 ### Figma Prototyping
 
 Before development, MAVA underwent prototyping using Figma to design the user interface. Figma helps in creating a cohesive and intuitive UI/UX.
