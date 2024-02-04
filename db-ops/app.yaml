@@ -1,0 +1,16 @@
+
+runtime: java17
+runtime_config:
+  jdk: openjdk17
+
+entrypoint: java -jar target/db-ops-0.0.1-SNAPSHOT.jar  # Specify the command to run your Java application
+
+handlers:
+- url: /.*
+  script: auto  # Use "auto" as a placeholder for script
+
+manual_scaling:
+  instances: 1
+
+env_variables:
+  SPRING_PROFILES_ACTIVE: "gcp"  # Set a Spring profile for GCP-specific configurations

@@ -1,6 +1,0 @@
-spring:
-  profiles: gcp
-  data:
-    mongodb:
-      uri: mongodb+srv://kyrogirgis:2iH8nUGPsXDqIlRY@mavadb.1mba7l2.mongodb.net/
-      database: mava
