@@ -1,10 +1,10 @@
-package com.mava.dboperations;
+package com.mava.dbops;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DboperationsApplicationTests {
+class DbOpsApplicationTests {
 
 	@Test
 	void contextLoads() {

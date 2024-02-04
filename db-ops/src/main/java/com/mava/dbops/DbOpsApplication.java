@@ -1,13 +1,13 @@
-package com.mava.dboperations;
+package com.mava.dbops;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DboperationsApplication {
+public class DbOpsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DboperationsApplication.class, args);
+		SpringApplication.run(DbOpsApplication.class, args);
 	}
 
 }

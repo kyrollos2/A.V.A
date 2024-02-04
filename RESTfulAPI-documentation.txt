@@ -1,0 +1,81 @@
+
+Astronaut API Documentation
+===========================
+
+Overview: Operations hosted by googe app engine: https://hack-brown.nn.r.appspot.com/
+---------
+This API provides access to operations related to astronaut entities, including retrieval, creation, update, and deletion of classified 
+astronaut records in our mongodb database.
+
+Endpoints:
+----------
+
+1. GET /api/astronauts
+   - Description: Retrieve a list of all astronauts.
+   - Parameters: None
+   - Response: A list of astronaut objects.
+   - Status Codes:
+     - 200 OK: Successfully retrieved list.
+
+2. GET /api/astronauts/{id}
+   - Description: Retrieve a single astronaut by their unique identifier.
+   - Path Variables: 
+     - id (String): The unique identifier of the astronaut.
+   - Response: An astronaut object.
+   - Status Codes:
+     - 200 OK: Successfully retrieved astronaut.
+     - 404 Not Found: Astronaut with the specified ID was not found.
+
+3. GET /api/astronauts/byFirstName/{firstName}
+   - Description: Retrieve astronauts by their first name. 
+                  Any name operation will pull all records related to the astronaut
+   - Path Variables: 
+     - firstName (String): The first name of the astronaut.
+   - Response: A list of astronaut objects with the specified first name.
+   - Status Codes:
+     - 200 OK: Successfully retrieved list.
+
+4. GET /api/astronauts/byLastName/{lastName}
+   - Description: Retrieve astronauts by their last name.
+   - Path Variables: 
+     - lastName (String): The last name of the astronaut.
+   - Response: A list of astronaut objects with the specified last name.
+   - Status Codes:
+     - 200 OK: Successfully retrieved list.
+
+5. GET /api/astronauts/byFullName
+   - Description: Retrieve astronauts by their full name.
+   - Query Parameters: 
+     - firstName (String): The first name of the astronaut.
+     - lastName (String): The last name of the astronaut.
+   - Response: A list of astronaut objects with the specified full name.
+   - Status Codes:
+     - 200 OK: Successfully retrieved list.
+
+6. POST /api/astronauts
+   - Description: Create a new astronaut record.
+   - Request Body: An astronaut object (excluding ID, which is generated automatically).
+   - Response: The created astronaut object, including its unique identifier.
+   - Status Codes:
+     - 201 Created: Astronaut successfully created.
+
+7. PUT /api/astronauts/{id}
+   - Description: Update an existing astronaut record.
+   - Path Variables: 
+     - id (String): The unique identifier of the astronaut to update.
+   - Request Body: An astronaut object with updated fields.
+   - Response: The updated astronaut object.
+   - Status Codes:
+     - 200 OK: Astronaut successfully updated.
+     - 404 Not Found: Astronaut with the specified ID was not found.
+
+8. DELETE /api/astronauts/{id}
+   - Description: Delete an astronaut record.
+   - Path Variables: 
+     - id (String): The unique identifier of the astronaut to delete.
+   - Response: None
+   - Status Codes:
+     - 204 No Content: Astronaut successfully deleted.
+     - 404 Not Found: Astronaut with the specified ID was not found.
+
+Note: All endpoints return a 500 Internal Server Error status code in case of server errors.
