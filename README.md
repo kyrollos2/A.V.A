@@ -55,7 +55,11 @@ The back-end of MAVA handles data processing, authentication, and more. Key tech
 -Java Springboot handle business logic
 
 ### ML-Development 🤖
-As described before, we generated a set of  5000 'fake and healthy' data. We used pandas for data manipulation, and scikit learn and used relevant dictionaries for establishing a data processing pipeline, training and evaluation I would love to go into more technical details but its 11:17 and I'm stressed. We ended up being able to successful classify our data set using Google's Auto AI and used two training cycles of 3 hours each. However this strategy is not viable in the long run  as it is resource intensive, cost prohibitive, and provides us little control of the model.
+1. Split generated data set into training and testing sets
+2. Transformers establised to extract the differnce in Male and Female acceptable thresholds. ColumnTransformer applies the combined feautures to the relevant columns in the dataset
+3. Data pipe line: Preprocess, and then a random forest classifier learns to map X_train and y_train and the feautures associated with them.
+Evaluations: .65 precision, .70 accuracy, .59 recall, .63 F1-Score, 
+
 
 ### Database 
 
